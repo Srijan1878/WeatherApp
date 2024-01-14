@@ -24,7 +24,7 @@ const Weather = () => {
     const noData = !fetching && _.isEmpty(data)
     return <div className="h-screen flex flex-col md:flex-row">
         <WeatherLeftPanel {...{ ...weatherDataProps, city, dayIndex, setDayIndex, setCity }} />
-        <WeatherForecastDashboard {...{ ...weatherDataProps, noData, dayIndex }} />
+        <WeatherForecastDashboard {...{ ...weatherDataProps, city, noData, dayIndex }} />
         <Toaster />
     </div>
 }

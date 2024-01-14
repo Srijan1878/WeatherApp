@@ -39,9 +39,8 @@ const WeatherInfo = ({ data = {}, dayIndex, setDayIndex }) => {
   return (
     <>
       <div className="flex flex-col gap-12 text-white items-center">
-        {}
         <div className="flex flex-col gap-2 items-center">
-          <h1 className="text-white">
+          <h1 className="text-white card-title">
             {_.get(data, "city.name")}, {_.get(data, "city.country")}
           </h1>
           <p className="text-white">
